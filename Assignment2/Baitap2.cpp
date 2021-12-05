@@ -14,7 +14,7 @@ int main (){
 		}else {
 			printf("Va la thu %d",rank);
 		}
-	}else if (m == 2 && d > 0 && d < 30){
+	}else if (m == 2 && d > 0 && d < 29){
 		printf("Day la ngay thu %d \n",d+31);
 		rank=(d+31)%7+1;
 		if (rank == 1){
