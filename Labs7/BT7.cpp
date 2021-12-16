@@ -13,11 +13,11 @@ int main(){
 	for (int i=0; i<n; i++){
 		if (arr[i] > 0){
 			sum+=arr[i];
-		}else{
 			if (smax < sum){
 				smax=sum;
-				sum=0;
 			}
+		}else{
+			sum=0;
 		}
 	}
 	if (smax > 0){

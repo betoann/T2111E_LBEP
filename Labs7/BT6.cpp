@@ -13,11 +13,11 @@ int main(){
 	for (int i=0; i<n; i++){
 		if (arr[i] > 0){
 			count++;
-		}else{
 			if (max < count){
 				max=count;
-				count=0;
 			}
+		}else{
+			count=0;
 		}
 	}
 	if (max > 0){
