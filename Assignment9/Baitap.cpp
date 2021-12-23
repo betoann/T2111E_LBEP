@@ -2,7 +2,7 @@
 #include <math.h>
 
 int TimSNT (int n){
-	for (int i=n+1; i>1; i++){
+	for (int i=n+1; true; i++){
 		int count=0;
 		for (int j=2; j<i; j++){
 			if (i%j==0){
