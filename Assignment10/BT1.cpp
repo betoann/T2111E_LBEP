@@ -5,13 +5,22 @@ int main(){
 	char str[50];
 	printf ("Nhap chuoi: ");
 	scanf ("%s",str);
-	int nguyenam=0, phuam=0;
-	for (int i=0; i<strlen(str); i++){
-		if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' ){
-			nguyenam++;
-		}else {
-			phuam++;
+	int a,e,i,o,u,k;
+	a = e = i = o = u = k = 0;
+	for (int j=0; j<strlen(str); j++){
+		switch(str[j]){
+			case 'a': a++; break;
+			case 'e': e++; break;
+			case 'i': i++; break;
+			case 'o': o++; break;
+			case 'u': u++; break;
+			default: k++;
 		}
 	}
-	printf ("Chuoi vua nhap co %d nguyen am va %d phu am \n",nguyenam,phuam);
+	printf ("So nguyen am a: %d\n",a);
+	printf ("So nguyen am e: %d\n",e);
+	printf ("So nguyen am i: %d\n",i);
+	printf ("So nguyen am o: %d\n",o);
+	printf ("So nguyen am u: %d\n",u);
+	printf ("so nguyen am khac: %d\n",k);
 }
