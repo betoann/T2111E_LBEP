@@ -25,6 +25,6 @@ int main(){
 		printf ("Nhap phan tu ary[%d]= ",i);
 		scanf ("%d",&ary[i]);
 	}
-	printf ("Mang sau khi in nguoc: \n");
+	printf (" Mang sau khi in nguoc: \n");
 	reverseArray(ary,n);
 }
